@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário UNINTER</title>
+</head>
+
+<body>
+    <h1>Pedidos de pizza</h1>
+    <form action="teste.jsp" method="post">
+        <h3>Nome: <input type="text" name="nome"></h3>
+        <h3>Email: <input type="email" name="email"></h3>
+
+        <h3>Tamanho: </h3>
+        <h4><input type="radio" name="tamanho" value="g"> Grande</h4>
+        <h4><input type="radio" name="tamanho" value="m"> Médio</h4>
+        <h4><input type="radio" name="tamanho" value="p"> Pequeno</h4>
+
+        <h3>Sabor:
+            <select name="sabor">
+                <option value="">Calabresa</option>
+                <option value="">Queijo</option>
+                <option value="">Portuguesa</option>
+            </select>
+        </h3>
+
+        <h3>Adicionais:
+        <h4><input type="checkbox" name="borda" value="sim">Borda</h4>
+        <h4><input type="checkbox" name="queijo" value="sim">Queijo Extra</h4>
+        </h3>
+
+        <h3>Data de Entrega: <input type="date" name="dataEntrega"></h3><br>
+
+        <h3>Observações:</h3>
+        <textarea name="msg" rows="10" cols="30"></textarea><br>
+
+        <input type="submit" value="Enviar">
+
+    </form>
+</body>
+
+</html>
